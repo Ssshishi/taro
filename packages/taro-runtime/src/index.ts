@@ -5,7 +5,7 @@ import './dom-external'
 import env from './env'
 
 export { hooks } from '@tarojs/shared'
-// bom
+// bom BOM浏览器对象模型
 export { document } from './bom/document'
 export { getComputedStyle } from './bom/getComputedStyle'
 export { History } from './bom/history'

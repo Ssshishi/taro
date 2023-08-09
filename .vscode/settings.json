@@ -23,5 +23,8 @@
   "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
   "files.associations": {
     "*.json": "jsonc"
-  }
+  },
+  "cSpell.words": [
+    "tarojs"
+  ]
 }

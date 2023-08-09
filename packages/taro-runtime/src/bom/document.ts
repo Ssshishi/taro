@@ -13,6 +13,7 @@ import env from '../env'
 let document
 
 if (process.env.TARO_ENV && !isWebPlatform()) {
+  // 非H5的情况下 document
   /* eslint-disable no-inner-declarations */
   function createDocument (): TaroDocument {
     /**

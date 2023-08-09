@@ -1,40 +1,33 @@
 <div align="center">
   <h1>Taro</h1>
   <p>开放式跨端跨框架解决方案，轻松构建可以运行在 小程序/Web/APP 上的应用</p>
-  <a href="http://makeapullrequest.com">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
-  </a>
-  <a href="https://www.npmjs.com/package/@tarojs/cli">
-    <img src="https://img.shields.io/node/v/@tarojs/cli.svg?style=flat-square">
-  </a>
-  <a href="https://www.npmjs.com/package/@tarojs/taro">
-    <img src="https://img.shields.io/npm/v/@tarojs/taro.svg?style=flat-square">
-  </a>
-  <a href="https://www.npmjs.com/package/@tarojs/taro">
-    <img src="https://img.shields.io/npm/l/@tarojs/taro.svg?style=flat-square">
-  </a>
-  <a href="https://www.npmjs.com/package/@tarojs/taro">
-    <img src="https://img.shields.io/npm/dt/@tarojs/taro.svg?style=flat-square">
-  </a>
-  <a href="https://travis-ci.org/NervJS/taro">
-    <img src="https://img.shields.io/travis/NervJS/taro.svg?style=flat-square">
-  </a>
-  <a href="https://github.com/NervJS/taro">
-    <img src="https://img.shields.io/github/contributors/NervJS/taro" alt="GitHub contributors">
-  </a>
-  <a href="https://github.com/NervJS/taro">
-    <img src="https://img.shields.io/github/commit-activity/w/NervJS/taro" alt="GitHub commit activity">
-  </a>
-  <a href="https://github.com/NervJS/taro">
-    <img src="https://img.shields.io/github/issues-closed/NervJS/taro" alt="GitHub closed issues">
-  </a>
-  <a href="https://github.com/NervJS/taro">
-    <img src="https://img.shields.io/github/commits-since/NervJS/taro/latest/next" alt="GitHub commits since latest release (by date)">
-  </a>
-  <a href="https://github.com/NervJS/taro">
-    <img src="https://img.shields.io/github/release-date/NervJS/taro" alt="GitHub Release Date">
-  </a>
 </div>
+
+## 源码的管理--menorepo
+
+> 从原先的lerna+yarn变成 现在的 pnpm管理
+
+### 优点
+
+- #### [yarn](https://so.csdn.net/so/search?q=yarn&spm=1001.2101.3001.7020) + lerna 配置复杂
+
+- #### pnpm 小而简
+
+- pnpm ， 速度快绝多大数场景下，速度会比 npm/yarn 快 2-3 倍
+
+- pnpm ， 高效利用磁盘空间内部文件node_modules是从单个可寻址内容的存储链接的
+
+- pnpm , 支持 monorepo用一个 git 仓库来管理多个子项目package
+
+- pnpm , 严格程序包只能访问其中指定的依赖项package.json
+
+- pnpm  确定性一个名为的锁定文件pnpm-lock.yaml
+
+
+
+## Packages
+
+
 
 [简体中文](./README.md) | [English](./README_EN.md)
 

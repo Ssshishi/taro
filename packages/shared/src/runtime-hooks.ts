@@ -116,6 +116,7 @@ export function TaroHook (type: HOOK_TYPE, initial?: Func): Hook {
   }
 }
 
+// class 类型
 export class TaroHooks<T extends Record<string, Func> = any> extends Events {
   hooks: Record<keyof T, Hook>
 

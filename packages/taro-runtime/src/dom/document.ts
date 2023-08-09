@@ -28,31 +28,40 @@ export class TaroDocument extends TaroElement {
     this.nodeName = DOCUMENT_ELEMENT_NAME
   }
 
+  // 创建节点
   public createElement (type: string): TaroElement | TaroRootElement | FormElement {
     const nodeName = type.toLowerCase()
 
     let element: TaroElement
     switch (true) {
+      // 根节点
       case nodeName === ROOT_STR:
         element = new TaroRootElement()
         return element
+      // 受控组件
       case controlledComponent.has(nodeName):
         element = new FormElement()
         break
+
       case nodeName === A:
         element = new AnchorElement()
         break
+      // 默认
       default:
         element = new TaroElement()
         break
     }
 
+
     element.nodeName = nodeName
+
     element.tagName = type.toUpperCase()
 
     return element
   }
 
+
+  // 一个丑陋的假createElementNS来处理@vue/runtime-dom的支持安装应用程序到svg容器vue@3.0.8
   // an ugly fake createElementNS to deal with @vue/runtime-dom's
   // support mounting app to svg container since vue@3.0.8
   public createElementNS (_svgNS: string, type: string): TaroElement | TaroRootElement | FormElement {

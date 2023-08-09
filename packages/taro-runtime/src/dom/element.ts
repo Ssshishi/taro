@@ -25,6 +25,7 @@ import { treeToArray } from './tree'
 import type { Attributes, Func } from '../interface'
 import type { TaroEvent } from './event'
 
+// taro节点 内容 
 export class TaroElement extends TaroNode {
   public ctx?
   public tagName: string

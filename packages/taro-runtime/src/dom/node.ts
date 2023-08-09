@@ -326,6 +326,7 @@ export class TaroNode extends TaroEventTarget {
     return this.childNodes.length > 0
   }
 
+  // 入队 更新
   public enqueueUpdate (payload: UpdatePayload) {
     this._root?.enqueueUpdate(payload)
   }
